@@ -2,11 +2,11 @@
   "name": "multipage",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.1",
     "normalize-scss": "~3.0.1",
     "skrollr": "~0.6.26",
     "singularity": "~1.4.0",
     "scut": "~1.0.1",
-    "bourbon": "~4.0.2"
+    "bourbon": "~4.0.2",
+    "jquery": "~2.1.1"
   }
 }

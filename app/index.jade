@@ -1,50 +1,19 @@
-doctype html
-html.no-js
-head
-		meta(charset='utf-8')
-		title multipage
-		meta(name='description', content='')
-		meta(name='viewport', content='width=device-width')
-		link(rel='shortcut icon', href='/favicon.ico')
-		// Place favicon.ico and apple-touch-icon.png in the root directory
-		// build:css(.) styles/vendor.css
-		// bower:css
-		// endbower
-		// endbuild
-		// build:css(.tmp) styles/main.css
-		link(rel='stylesheet', href='styles/main.css')
-		// endbuild
-	body
-		//if lt IE 10
-			p.browsehappy
-				| You are using an
-				strong outdated
-				| browser. Please
-				a(href='http://browsehappy.com/') upgrade your browser
-				| to improve your experience.
-		.hero-unit
-			h1 'Allo, 'Allo!
-			p You now have
-			ul
-				li HTML5 Boilerplate
-				li Sass
-				li Facebook
-
-		// build:js(.) scripts/vendor.js
-		// bower:js
-		script(src='bower_components/jquery/dist/jquery.js')
-		script(src='bower_components/skrollr/src/skrollr.js')
-		// endbower
-		// endbuild
-
-		// Google Analytics: change UA-XXXXX-X to be your site's ID.
-		script.
-			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-			e.src='//www.google-analytics.com/analytics.js';
-			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-			ga('create','UA-XXXXX-X');ga('send','pageview');
-		// build:js({app,.tmp}) scripts/main.js
-		script(src='scripts/main.js')
-		// endbuild
+extends ./layouts/layout.jade
+block title
+	title Home
+block content
+	div
+		h4 This is heading 1
+		p All this fucking text can lick it!
+	div
+		h4 This is where i text automatic jade building
+		p Recusandae dicta vero officia eos suscipit, nisi consequuntur numquam mollitia id tempora repudiandae ea, deserunt molestias earum quis accusamus explicabo assumenda alias praesentium neque! Ratione totam vel sequi sunt. Dolorum.
+	div
+		h4 This is heading 3
+		p A quidem provident eius aspernatur quae soluta dolore laudantium est perferendis adipisci id placeat molestias, illo animi velit sequi doloribus impedit, officiis asperiores aliquid quas et nesciunt, debitis totam. Facere.
+	div
+		h4 This is heading 4
+		p Deserunt perferendis harum non fugit. Accusamus quae, amet repellendus in architecto qui ipsam quo nam, ea placeat provident minus facilis optio adipisci quos asperiores sed, nostrum consequatur sapiente similique quia.
+	div
+		h4 This is heading 5
+		p Reprehenderit cum tempore sit at corrupti unde necessitatibus natus ipsa ea neque placeat iure magnam ab consequuntur minus molestias deserunt, ipsam officiis aliquid iste fugit quod ducimus quibusdam quis? Quas?

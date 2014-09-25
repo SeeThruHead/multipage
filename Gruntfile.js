@@ -214,7 +214,7 @@ module.exports = function (grunt) {
     wiredep: {
       app: {
         ignorePath: /^\/|\.\.\//,
-        src: ['<%= config.app %>/index.jade']
+        src: ['<%= config.app %>/layouts/layout.jade']
       },
       sass: {
         src: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
@@ -289,12 +289,12 @@ module.exports = function (grunt) {
           removeCommentsFromCDATA: true,
           removeEmptyAttributes: true,
           removeOptionalTags: true,
-          removeRedundantAttributes: true,
+          removeRedundantAttributes: false,
           useShortDoctype: true
         },
         files: [{
           expand: true,
-          cwd: '.tmp',
+          cwd: '<%= config.dist %>',
           src: '{,*/}*.html',
           dest: '<%= config.dist %>'
         }]
@@ -338,7 +338,6 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
-            '{,*/}*.html',
             'styles/fonts/{,*/}*.*'
           ]
         }, {
@@ -352,7 +351,15 @@ module.exports = function (grunt) {
         cwd: '<%= config.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
+      },
+      html: {
+        expand: true,
+        dot: true,
+        cwd: '.tmp',
+        dest: '<%= config.dist %>',
+        src: '{,*/}*.html'
       }
+
     },
 
     // Run some tasks in parallel to speed up build process
@@ -416,14 +423,15 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'wiredep',
+    'jade',
     'useminPrepare',
     'concurrent:dist',
-    'jade',
     'autoprefixer',
     'concat',
     'cssmin',
     'uglify',
     'copy:dist',
+    'copy:html',
     'rev',
     'usemin',
     'htmlmin'

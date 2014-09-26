@@ -1,19 +1,24 @@
 extends ./layouts/layout.jade
 block title
-	title Home
+  title Home
 block content
-	div
-		h4 This is heading 1
-		p All this fucking text can lick it!
-	div
-		h4 This is where i text automatic jade building
-		p Recusandae dicta vero officia eos suscipit, nisi consequuntur numquam mollitia id tempora repudiandae ea, deserunt molestias earum quis accusamus explicabo assumenda alias praesentium neque! Ratione totam vel sequi sunt. Dolorum.
-	div
-		h4 This is heading 3
-		p A quidem provident eius aspernatur quae soluta dolore laudantium est perferendis adipisci id placeat molestias, illo animi velit sequi doloribus impedit, officiis asperiores aliquid quas et nesciunt, debitis totam. Facere.
-	div
-		h4 This is heading 4
-		p Deserunt perferendis harum non fugit. Accusamus quae, amet repellendus in architecto qui ipsam quo nam, ea placeat provident minus facilis optio adipisci quos asperiores sed, nostrum consequatur sapiente similique quia.
-	div
-		h4 This is heading 5
-		p Reprehenderit cum tempore sit at corrupti unde necessitatibus natus ipsa ea neque placeat iure magnam ab consequuntur minus molestias deserunt, ipsam officiis aliquid iste fugit quod ducimus quibusdam quis? Quas?
+  .hero
+    .hero-inner
+      .hero-copy
+        h1 The Future of Commuting
+      button: a Learn More About it
+  div.intro-text
+    h2 Welcome to the future.
+    h4
+      | It turns your ordinary bicycle into a smart electric hybrid by simply replacing your back wheel.
+    p
+      | The Copenhagen Wheel transforms your bicycle into a smart electric hybrid, quickly and easily. The Wheel contains a motor, batteries, multiple sensors, wireless connectivity, and an embedded control system. The Wheel learns how you pedal and integrates seamlessly with your motion, multiplying your pedal power 3x—10x. It makes hills feel flat and distances shrink, so you can cycle just about anywhere.
+  .gallery
+    - var images = ["back","face","handlebar","crank","closewheel","iso","side","woman","back2","rear","sidewheel","chain"];
+    each image in images
+      div(class=image)
+
+
+
+
+

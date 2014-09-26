@@ -1,0 +1,12 @@
+@include scut-sticky-footer-fixed(100px);
+footer {
+  p {
+    text-align: center;
+  }
+  color: white;
+  padding-top: 40px;
+  clear: both;
+  text-align: center;
+  height: 100px;
+  background-color: $brand-color;
+}

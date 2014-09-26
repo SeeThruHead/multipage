@@ -6,6 +6,15 @@
 @import "scut/dist/_scut.scss";
 @import "bourbon/dist/_bourbon.scss";
 // endbower
+@include scut-reset(semanticize); //http://davidtheclark.github.io/scut/reset.html
 @import "bourbonsettings";
 @import "base/base"; // Bitters
 @import "browsehappy";
+@import "vars";
+@import "layout";
+@import "header";
+@import "footer";
+@import "index";
+@import "contact";
+
+

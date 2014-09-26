@@ -1,0 +1,90 @@
+.hero {
+  background-image: url($hero-image);
+  // background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  // padding-bottom: 4em;
+  padding: 15% 0;
+  .hero-inner {
+    @include clearfix;
+    padding: 1em;
+    // padding-top: scut-em(80px);
+    margin: auto;
+    text-align: center;
+    color: $hero-color;
+    text-shadow: 0 5px 5px rgba(0,0,0,.8);
+
+    button {
+      @include button(simple, $base-background-color);
+      font-size: $base-font-size;
+      outline: none;
+      a {
+        color: black;
+      }
+    }
+
+    .hero-copy {
+      text-align: center;
+
+      h1 {
+        font-size: 1.6em;
+        margin-bottom: 3em;
+      }
+    }
+  }
+}
+
+.intro-text {
+  $intro-text-width: 60%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 5em;
+  margin-top: 4em;
+  text-align: center;
+
+  h2 {
+    font-family: $serif;
+    font-weight: 800;
+    margin-bottom: .3em;
+  }
+
+  h4 {
+    color: lighten($base-font-color, 20);
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 1.4em;
+    margin: 0 auto 1em;
+  }
+
+  p {
+    margin: auto;
+    a {
+      font-size: .8em;
+      font-weight: 400;
+      text-transform: uppercase;
+      span {
+        font-size: 1.3em;
+        line-height: 0;
+      }
+    }
+  }
+}
+.gallery {
+  $images: "back", "face", "handlebar", "crank", "closewheel", "iso", "side", "woman", "back2", "rear", "sidewheel", "chain";
+  %gallery-item {
+    // height: 600px;
+    // width: 400px;
+    width: 33.333%;
+    float: left;
+    @include scut-ratio-box(2/3);
+    background-size: cover;
+    background-position: center center;
+  }
+  @each $image in $images {
+    .#{$image} {
+      @extend %gallery-item;
+      background-image: url('#{$image-path}/#{$image}.png');
+    }
+  }
+}

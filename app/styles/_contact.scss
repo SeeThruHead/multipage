@@ -1,0 +1,13 @@
+.contact p {
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  @include breakpoint(600px) {
+    margin-left: 10%;
+  }
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+}

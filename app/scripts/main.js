@@ -3,5 +3,5 @@ $(function(){
   $('.hamb').click(function() {
     $('nav').toggleClass('is-shown');
   });
-  var s = skrollr.init();
+  var s = skrollr.init({forceHeight: false});
 });

@@ -1,0 +1,81 @@
+{
+  "images": ["back","face","handlebar","crank","closewheel","iso","side","woman","back2","rear","sidewheel","chain"],
+  "team": [
+    {
+      "name": "Gil Arbel",
+      "about": "A 25 year industry expert, he brings experience in product management, channel and business development, marketing and global operations. Led small and large businesses such as: CA Technologies (Computer Associates), Cheynne, Sapiens and FalconStor. Results driven, he helps the team successfully strategize and execute."
+    },
+    {
+      "name": "ERIC BARBER",
+      "about": "Previously led the engineering group for a high-end engineering services company that specialized in development of advanced technology mobility solutions."
+    },
+    {
+      "name": "ASSAF BIDERMAN",
+      "about": "Assaf has a background in physics as well as in design. He is a co-inventor of the Copenhagen Wheel and Associate Director of the SENSEable City Laboratory at MIT."
+    },
+    {
+      "name": "TAI C",
+      "about": "With a background spanning Bluefin Robotics, GE and Analogic, the combination of his innate problem solving and knowledge of embedded firmware, digital hardware design, server and desktop application development allows him to find the source of most bugs when others throw their hands up."
+    },
+    {
+      "name": "RUBEN CAGNIE",
+      "about": "Previously working as a Product Manager and Developer at Esko, a global supplier of integrated solutions for packaging. Ruben has 10 years of experience in working on platform, desktop, web and mobile products."
+    },
+    {
+      "name": "JULIAN FONG",
+      "about": "Previously, Julian was at the BC Cancer Agency, developing an automated system to transfer radioactive liquids and microchips that sorted human cells."
+    },
+    {
+      "name": "JD HEINZMANN",
+      "about": "JD is trained as a mechanical engineer with emphasis on automatic control systems. Over the last 18 years he has been focused on the development of the electric propulsion systems for the iBot stair-climbing wheelchair, the Segway Personal Transporter, and the Harvest Automation decorative plant- moving robot."
+    },
+    {
+      "name": "JOHN IBSEN",
+      "about": "Previously an engineer for IBM, John enjoys hard coding challenges. He's most looking forward to seeing the wheel inspire people to choose to ride a bike instead of drive."
+    },
+    {
+      "name": "TIGER LILY",
+      "about": "Previously a rescued dog from the South, with a strong background in relaxing and lounging, Tiger brings a lot of smiles to the team. She always reminds us to stop and smell the flowers on our walks with her around the neighborhood."
+    },
+    {
+      "name": "MATT MILLER",
+      "about": "Focused on agile, test driven development with NodeJS and AngularJS along with large scale, real-time applications and design thinking. He is excited by making ideas into reality using code. Always bringing something new, new technology, new code, new workflow, to the team."
+    },
+    {
+      "name": "NILI [ONILI] OHAYON",
+      "about": "Nili, onili, is a singer, producer and videographer. She performs worldwide, and releases music & videos continuously. She is Superpedestrian’s artistic director, managing product image, and public outreach."
+    },
+    {
+      "name": "ROB ROY",
+      "about": "With 30 years of experience in consumer product development as a mechanical engineer he honed his skills at Kiva Systems, iRobot and Kaz. Called upon to solve problems in E/M packaging, exploiting plastics and aluminum casting technologies."
+    },
+    {
+      "name": "ANDREW SCHMIDT",
+      "about": "Most recently managed digital business development globally for PUMA. A recovered financier passionate about a wide range of startups. He embraces new technologies and finds ways to leverage them to connect with our consumers."
+    },
+    {
+      "name": "RYAN SCHNEIDER",
+      "about": "With prior expertise in product management and materials engineering at 3D Systems, he has a breadth of knowledge allowing him to understand the entire product, its features and how it will benefit the customer. Currently, developing replicable processes to solve and avoid product centric issues."
+    },
+    {
+      "name": "JAMES SIMARD",
+      "about": "James, previously was part of the Titanoboa team, a 50ft wirelessly controlled robotic snake weighing 1 ton, and worked as an electrical technician for UBCs acoustics labs."
+    },
+    {
+      "name": "JON STEVENS",
+      "about": "Previously a key contributor to the development for a self-balancing personal transport vehicle at Segway."
+    },
+    {
+      "name": "ED THOMAS",
+      "about": "Prior to joining Superpedestrian he worked as a bicycle mechanic at Harris Cyclery. His interests and skills are wide ranging as showcased by his enthusiasm tackling challenging and fulfilling projects."
+    },
+    {
+      "name": "JEFF WEINSTEIN",
+      "about": "Previous experience as lead manufacturing engineer at Kiva Systems where he launched order fulfillment robots, used in the eCommerce arena, into high volume production. Specializing in design for manufacturability and always pondering the \"what if?\" and the \"why not?\"."
+    },
+    {
+      "name": "MIKE ZIOLEK",
+      "about": "Most recently at Kiva Systems designing plastics and other parts for Amazon fulfillment robots. Ranging in experience from hand-made prototypes to full scale production, he is focused on making a difference in people's everyday lives by improving user experience and simplicity in his designs."
+    }
+  ]
+}

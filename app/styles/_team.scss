@@ -1,0 +1,55 @@
+.team {
+  > p {
+    margin-bottom: 25px;
+    @include breakpoint(700px) {
+      padding: 0 10%;
+    }
+  }
+  padding: 0 20px 30px;
+}
+h3 {
+  font-size: scut-em(22px);
+  text-align: center;
+  padding-bottom: 15px;
+}
+.person-container {
+  @extend %clearfix;
+
+}
+.person-container img {
+  width: 50%;
+  padding: 20px 0;
+}
+.fl-heading {
+  width: 50%;
+  float: left;
+  padding: 18% 5%;
+  h4 {
+    text-align: center;
+  }
+  @include breakpoint(450px) {
+    display: none;
+  }
+}
+.about {
+  clear: both;
+  float: left;
+  h4 {
+    font-size: scut-em(16px);
+    display: none;
+    @include breakpoint(450px) {
+      display: block;
+    }
+  }
+  p {
+    font-size: scut-em(14px);
+    clear: both;
+    text-align: left;
+  }
+}
+.person-container:nth-child(odd) img {
+  float: left;
+}
+.person-container:nth-child(even) img {
+  float: right;
+}

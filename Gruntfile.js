@@ -183,7 +183,8 @@ module.exports = function (grunt) {
     jade: {
         dist: {
             options: {
-                pretty: true
+                pretty: true,
+                data: grunt.file.readJSON('app/data.json')
             },
             files: [{
                 expand: true,

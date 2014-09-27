@@ -7,6 +7,7 @@ head
   meta(name='description', content='')
   meta(name='viewport', content='width=device-width')
   link(rel='shortcut icon', href='/favicon.ico')
+  link(href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,400,600,700,400italic" rel='stylesheet' type='text/css')
   // Place favicon.ico and apple-touch-icon.png in the root directory
   // build:css(.) styles/vendor.css
   // bower:css
@@ -23,6 +24,16 @@ head
         | browser. Please
         a(href='http://browsehappy.com/') upgrade your browser
         | to improve your experience.
+    #fb-root
+    script#facebook-jssdk(src='//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0')
+    script.
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
 
     include ../partials/header.jade
     .wrapper

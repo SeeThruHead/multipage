@@ -1,3 +1,9 @@
+.fb-wrap {
+  margin-top: 30px;
+}
+.fb-like {
+  filter: hue-rotate(120deg) saturate(4) brightness(0.8);
+}
 .hero {
   background-image: url($hero-image);
   // background-color: #000;
@@ -16,11 +22,23 @@
     text-shadow: 0 5px 5px rgba(0,0,0,.8);
 
     button {
-      @include button(simple, $base-background-color);
+      @include button(flat, $brand-color);
       font-size: $base-font-size;
+      font-family: 'Source Sans Pro',sans-serif;
+      font-weight: 600;
       outline: none;
+      padding: 15px 20px;
+      border: 1px solid darken($brand-color, 5%);
+      transition: transform 200ms ease;
+      &:hover {
+        transform: scale(1.1);
+      }
       a {
-        color: black;
+        color: white;
+        font-size: scut-em(20px);
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        font-weight: 600;
       }
     }
 
@@ -39,13 +57,14 @@
   $intro-text-width: 60%;
   max-width: 800px;
   margin: 0 auto;
-  margin-bottom: 5em;
+  margin-bottom: 2em;
   margin-top: 4em;
   text-align: center;
 
   h2 {
     font-family: $serif;
     font-weight: 800;
+    font-size: 1.5em;
     margin-bottom: .3em;
   }
 
@@ -68,6 +87,22 @@
         line-height: 0;
       }
     }
+  }
+}
+.vwrapper {
+  position: relative;
+  width: 100%;
+  @include breakpoint(500px) {
+    width: 80%;
+  }
+  margin: 0 auto 4em;
+  @include scut-ratio-box(16/9);
+  iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
   }
 }
 .gallery {

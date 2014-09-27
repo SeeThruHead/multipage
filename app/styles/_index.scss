@@ -24,7 +24,7 @@
     button {
       @include button(flat, $brand-color);
       font-size: $base-font-size;
-      font-family: 'Source Sans Pro',sans-serif;
+      font-family: $source-sans;
       font-weight: 600;
       outline: none;
       padding: 15px 20px;

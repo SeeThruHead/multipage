@@ -1,5 +1,5 @@
 // Global
-$image-path: "/images";
+$image-path: "../images";
 $brand-color: #BC0000;
 
 // Font
@@ -10,4 +10,4 @@ $btn-hover-color: rgba(0, 0, 0, .05);
 // Index Page
 
 $hero-color: white;
-$hero-image: '#{$image-path}/rear.png';
+$hero-image: '../#{$image-path}/rear.png';

@@ -41,11 +41,10 @@ head
     include ../partials/footer.jade
     // build:js(.) scripts/vendor.js
     // bower:js
-    script(src='../bower_components/jquery/dist/jquery.js')
     script(src='../bower_components/skrollr/src/skrollr.js')
     // endbower
     // endbuild
-    script(src="scripts/wufoo.js")
+
     // Google Analytics: change UA-XXXXX-X to be your site's ID.
     script.
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -55,5 +54,6 @@ head
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
     // build:js({app,.tmp}) scripts/main.js
+    script(src='scripts/wufoo.js')
     script(src='scripts/main.js')
     // endbuild

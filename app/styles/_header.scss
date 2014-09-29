@@ -13,6 +13,7 @@ header {
 .logo {
   @include size(60px);
   float: left;
+  transform: translateZ(0);
 }
 h1 {
   padding-top: 15px;

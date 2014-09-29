@@ -4,10 +4,30 @@ block title
 block content
   .contact
     p If you'd like to get in touch with us, or make a preorder, please fillout the form below and we'll get back to you as soon as possible.
-    form(name="login", action="/login", method="post")
-      label Name
-      input(type="text", name="user")
-      label Email
-      input(type="password", name="pass")
-      textarea
-      input(type="submit", value="Send")
+
+    form#form1.wufoo.topLabel.page(name='form1', accept-charset='UTF-8', autocomplete='off', enctype='multipart/form-data', method='post', novalidate='', action='https://seethruhead.wufoo.com/forms/zqbkdov0lnr4jj/#public')
+      ul
+        li#foli14.notranslate
+          label#title14.desc(for='Field14')
+            | Name
+            span#req_14.req *
+          div
+            input#Field14.field.text.medium(name='Field14', type='text', value='', maxlength='255', tabindex='1', onkeyup='', required='')
+        li#foli10.notranslate
+          label#title10.desc(for='Field10')
+            | Email
+            span#req_10.req *
+          div
+            input#Field10.field.text.medium(name='Field10', type='email', spellcheck='false', value='', maxlength='255', tabindex='2', required='')
+        li#foli11.notranslate
+          label#title11.desc(for='Field11')
+            | Leave us a message.
+          div
+            textarea#Field11.field.textarea.medium(name='Field11', spellcheck='true', rows='10', cols='50', tabindex='3', onkeyup='')
+        li.buttons
+          div
+            input#saveForm.btTxt.submit(name='saveForm', type='submit', value='Submit')
+        li.hide
+          label(for='comment') Do Not Fill This Out
+          textarea#comment(name='comment', rows='1', cols='1')
+          input#idstamp(type='hidden', name='idstamp', value='zYHjo9g0erjLM7dBtsjSk0gZf457zf+/e2fo+39pnu4=')

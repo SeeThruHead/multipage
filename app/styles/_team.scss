@@ -1,7 +1,10 @@
+$para-bp: 700px;
+$startgrid-bp: 900px;
+$small: 0px 800px;
 .team {
   > p {
     margin-bottom: 25px;
-    @include breakpoint(700px) {
+    @include breakpoint($para-bp) {
       padding: 0 10%;
     }
   }
@@ -14,11 +17,10 @@ h3 {
 }
 .person-container {
   @extend %clearfix;
-
-}
-.person-container img {
-  width: 50%;
-  padding: 20px 0;
+  position: relative;
+  @include breakpoint($startgrid-bp) {
+    font-size: 0;
+  }
 }
 .fl-heading {
   width: 50%;
@@ -27,29 +29,93 @@ h3 {
   h4 {
     text-align: center;
   }
-  @include breakpoint(450px) {
+  @include breakpoint($para-bp) {
     display: none;
   }
 }
 .about {
-  clear: both;
   float: left;
+  @include breakpoint($para-bp) {
+    width: 50%;
+    padding: 10%;
+  }
   h4 {
     font-size: scut-em(16px);
     display: none;
-    @include breakpoint(450px) {
+    @include breakpoint($para-bp) {
       display: block;
     }
   }
   p {
     font-size: scut-em(14px);
-    clear: both;
     text-align: left;
   }
 }
-.person-container:nth-child(odd) img {
-  float: left;
+@include breakpoint(0px $startgrid-bp) {
+  .person-container img {
+    width: 50%;
+    padding: 20px 0;
+  }
+  .person-container:nth-child(odd) img {
+    float: left;
+  }
+  .person-container:nth-child(even) img {
+    float: right;
+  }
 }
-.person-container:nth-child(even) img {
-  float: right;
-}
+@include add-grid(3);
+@include add-grid(4 at 1100px);
+@include add-grid(6 at 1400px);
+@include add-gutter(1/3 at $startgrid-bp);
+// @include sgs-change('output', 'float');
+
+@include add-gutter-style('split');
+@include breakpoint($startgrid-bp) {
+    img {
+      width: 100%;
+    }
+    .about {
+      transition: opacity .5s;
+      color: white;
+      width: 100%;
+      height: 100%;
+      @include scut-absolute;
+      opacity: 0;
+      .person-container:hover & {
+        background-color: rgba(0, 0, 0, .5);
+        padding: 5px;
+        font-size: 14px;
+        opacity:1;
+      }
+    }
+    .person-container {
+      @include float-span(1);
+      margin-bottom: 40px;
+      @include breakpoint(1100px) {
+        @include float-span(1);
+      }
+      @include breakpoint(1400px) {
+        @include float-span(1);
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
